@@ -1,3 +1,5 @@
+import jdk.internal.dynalink.linker.LinkerServices
+
 plugins { // (1)
     id 'org.springframework.boot' version '2.4.1' // RELEASE 삭제
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
@@ -19,6 +21,13 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    annotationProcessor ('org.projectlombok:lombok')
+    testAnnotationProcessor ('org.projectlombok:lombok')
+    testImplementation ('org.projectlombok:lombok')
+    implementation('mysql:mysql-connector-java')
+    implementation('implementation(\'mysql:mysql-connector-java\')')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+
 }
 
 // for Junit 5
