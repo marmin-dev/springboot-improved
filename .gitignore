@@ -41,5 +41,3 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-/src/resources/application.properties
-/src/resources/appication.properties
