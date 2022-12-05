@@ -25,7 +25,7 @@ public class OAuthAttributes {
         this.picture = picture;
     }
 
-    //사용자 정보는 Map이기 땜ㄴ에 값 하나하나를 반환해야한다
+    //사용자 정보는 Map이기 때문에 값 하나하나를 반환해야한다
     public static OAuthAttributes of(String registrationId, String userNameAttributeName,
                                      Map<String,Object> attributes){
         return ofGoogle(userNameAttributeName, attributes);
