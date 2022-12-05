@@ -3,10 +3,8 @@ package com.improved.springboot.config.auth.dto;
 import com.improved.springboot.domain.user.User;
 import lombok.Getter;
 
-import java.io.Serializable;
-
 @Getter
-public class SessionUser implements Serializable {
+public class SessionUser {
     private String name;
     private String email;
     private String picture;
@@ -14,7 +12,6 @@ public class SessionUser implements Serializable {
     public SessionUser(User user){
         this.name = user.getName();
         this.email= user.getEmail();
-        this.picture= user.getPicture();
-
+        this.picture= user.getEmail();
     }
 }
